@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply font-body text-black-500;
+}
+
+html {
+	@apply scroll-smooth;
+}
+
+h4 {
+	@apply font-heading text-2xl font-bold;
+}
+
+h3 {
+	@apply font-heading text-black-500 text-3xl font-bold mb-small;
+}
+
+@layer components {
+	.btn-login {
+		@apply w-full px-medium py-small rounded-medium bg-brandRed-500 text-white-500 tracking-wide text-xl font-heading font-bold hover:bg-brandRed-600 cursor-pointer transition duration-300;
+	}
+
+	.container-hero-section {
+		@apply m-small  shadow-btn rounded-medium overflow-hidden;
+	}
+
+	.container-hero-section-2 {
+		@apply flex flex-col gap-small items-center justify-center p-small;
+	}
+
+	.container-hero-section h2 {
+		@apply font-display font-bold text-center text-5xl tracking-wider text-white-500 uppercase;
+	}
+
+	.card-pricelist {
+		@apply px-small rounded-medium h-[75vh] flex flex-col pt-medium items-center;
+	}
+
+	.card-pricelist p {
+		@apply mb-small text-base;
+	}
+}
